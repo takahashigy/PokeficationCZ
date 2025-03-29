@@ -143,12 +143,8 @@ function initScene() {
 
     // Try to find the GLB file using different possible paths
     const possibleModelPaths = [
-      './card.glb', // Relative path
-      '/card.glb',  // Root path
-      'card.glb',   // Direct filename
-      './assets/card.glb', // Assets directory
-      '/assets/card.glb',  // Root assets directory
-    ];
+    '/card.glb',  // Root path
+   ];
 
     // Function to attempt loading with a specific path
     const tryLoadingModel = (pathIndex) => {
